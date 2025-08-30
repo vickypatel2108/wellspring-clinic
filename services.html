@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WellSpring Family Clinic | Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore GP services, immunizations, and family health at WellSpring Family Clinic.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="WellSpring Family Clinic Home">
+      <span class="brand__logo">W</span>
+      <span class="brand__text">WellSpring Family Clinic</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav__links" role="navigation" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="bmi.html">BMI Calculator</a>
+      <a class="nav__link" href="appointment.html">Appointment</a>
+      <a class="nav__link" href="about.html">About Us</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 class="m0">Our Services</h1>
+    <p class="mt8">We provide holistic, evidence-based care for all ages.</p>
+
+    <div class="grid-3 mt24">
+      <article class="service reveal">
+        <h3>General Practice</h3>
+        <p>Consultations, prescriptions, referrals, pathology, and chronic disease management.</p>
+      </article>
+      <article class="service reveal">
+        <h3>Immunizations</h3>
+        <p>Routine childhood schedule, travel vaccines, flu and COVID-19 shots.</p>
+      </article>
+      <article class="service reveal">
+        <h3>Women’s Health</h3>
+        <p>Pap smears, contraception counselling, antenatal and postnatal care.</p>
+      </article>
+      <article class="service reveal">
+        <h3>Men’s Health</h3>
+        <p>Heart health, prostate checks, mental health plans, and lifestyle support.</p>
+      </article>
+      <article class="service reveal">
+        <h3>Child Health</h3>
+        <p>Growth checks, vaccinations, allergy management, and nutrition guidance.</p>
+      </article>
+      <article class="service reveal">
+        <h3>Travel Medicine</h3>
+        <p>Destination-specific advice, vaccinations, and preventive prescriptions.</p>
+      </article>
+    </div>
+
+    <div class="alert alert--info mt32 reveal">
+      <strong>Billing:</strong> Bulk-billing is available for eligible patients. Please bring your Medicare card.
+    </div>
+
+    <div class="center mt24">
+      <a class="btn btn--primary" href="appointment.html">Request Appointment</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <h3 class="m0">WellSpring Family Clinic</h3>
+      <p class="mt8">Caring for families with compassion and evidence-based medicine.</p>
+      <div class="chips mt16">
+        <span class="chip">General Practice</span>
+        <span class="chip">Immunizations</span>
+        <span class="chip">Family Health</span>
+      </div>
+    </div>
+    <div>
+      <h4 class="m0">Visit Us</h4>
+      <p class="mt8">123 Meadow Lane, Melbourne VIC 3000</p>
+      <p>Mon–Fri: 8:00–18:00 • Sat: 9:00–13:00</p>
+    </div>
+    <div>
+      <h4 class="m0">Contact</h4>
+      <p class="mt8">Phone: (03) 5555 1234</p>
+      <p>Email: hello@wellspring.example</p>
+    </div>
+  </div>
+  <div class="container" style="padding:12px 0; border-top:1px solid var(--ring);">
+    <small>© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

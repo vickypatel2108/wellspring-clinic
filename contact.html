@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact | WellSpring Family Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with WellSpring Family Clinic. View our address, phone, email and send a message.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="WellSpring Family Clinic Home">
+      <span class="brand__logo">W</span>
+      <span class="brand__text">WellSpring Family Clinic</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav__links" role="navigation" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="bmi.html">BMI Calculator</a>
+      <a class="nav__link" href="appointment.html">Appointment</a>
+      <a class="nav__link" href="about.html">About Us</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container grid-2">
+    <section class="card reveal">
+      <h1 class="m0">Contact Us</h1>
+      <p class="mt8">We’d love to hear from you. Use the form or find us on the map.</p>
+
+      <!-- Added onsubmit to call sendContact() -->
+      <form id="contact-form" class="grid mt24" onsubmit="sendContact(event)" aria-describedby="contact-help">
+        <div class="field">
+          <label for="c_name">Full Name *</label>
+          <input id="c_name" name="name" type="text" required autocomplete="name" placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label for="c_email">Email *</label>
+          <input id="c_email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="c_message">Message *</label>
+          <textarea id="c_message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit">Send Message</button>
+        <div id="contact-msg" class="mt16" role="status" aria-live="polite"></div>
+      </form>
+
+      <p id="contact-help" class="help mt16">We usually reply within one business day.</p>
+    </section>
+
+    <aside class="card reveal">
+      <h2 class="m0">Find Us</h2>
+      <p class="mt8">123 Meadow Lane, Melbourne VIC 3000</p>
+      <iframe
+        class="map mt16"
+        title="WellSpring on Google Maps"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Melbourne%20VIC&output=embed">
+      </iframe>
+      <div class="alert alert--info mt16">Parking available on site. Tram and bus stops within a 5-minute walk.</div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <h3 class="m0">WellSpring Family Clinic</h3>
+      <p class="mt8">Caring for families with compassion and evidence-based medicine.</p>
+      <div class="chips mt16">
+        <span class="chip">General Practice</span>
+        <span class="chip">Immunizations</span>
+        <span class="chip">Family Health</span>
+      </div>
+    </div>
+    <div>
+      <h4 class="m0">Visit Us</h4>
+      <p class="mt8">123 Meadow Lane, Melbourne VIC 3000</p>
+      <p>Mon–Fri: 8:00–18:00 • Sat: 9:00–13:00</p>
+    </div>
+    <div>
+      <h4 class="m0">Contact</h4>
+      <p class="mt8">Phone: (03) 5555 1234</p>
+      <p>Email: hello@wellspring.example</p>
+    </div>
+  </div>
+  <div class="container" style="padding:12px 0; border-top:1px solid var(--ring);">
+    <small>© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WellSpring Family Clinic | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WellSpring Family Clinic offers family health, immunizations, and GP services in Melbourne. Book an appointment online.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="WellSpring Family Clinic Home">
+      <span class="brand__logo">W</span>
+      <span class="brand__text">WellSpring Family Clinic</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav__links" role="navigation" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="bmi.html">BMI Calculator</a>
+      <a class="nav__link" href="appointment.html">Appointment</a>
+      <a class="nav__link" href="about.html">About Us</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero section">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="badge">Open Mon–Fri 8–6 • Sat 9–1</span>
+        <h1>Family-centred care, close to home.</h1>
+        <p>From routine checkups to immunizations and chronic care, our team is here for every stage of family life.</p>
+        <div class="mt16">
+          <a class="btn btn--primary" href="appointment.html">Request Appointment</a>
+          <a class="btn btn--ghost" href="services.html">Explore Services</a>
+        </div>
+        <div class="grid mt24">
+          <div class="kpi"><div>Same-day <b>GP slots</b> most weekdays</div></div>
+          <div class="kpi"><div>Bulk-billing for <b>eligible</b> patients</div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="assets/images/hero 1.jpg" 
+     alt="Friendly family doctor consultation" 
+     style="width:100%; border-radius:16px; border:1px solid var(--ring); box-shadow:var(--shadow)">
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="m0">Featured Services</h2>
+      <p class="mt8">High-quality primary care for the whole family.</p>
+      <div class="grid-3 mt24">
+        <article class="service reveal">
+          <h3>General Practice</h3>
+          <p>Checkups, referrals, prescriptions, and ongoing care.</p>
+        </article>
+        <article class="service reveal">
+          <h3>Immunizations</h3>
+          <p>Childhood, travel, and seasonal vaccinations.</p>
+        </article>
+        <article class="service reveal">
+          <h3>Family Health</h3>
+          <p>Women’s, men’s, and child health consultations.</p>
+        </article>
+      </div>
+      <div class="center mt24">
+        <a class="btn btn--accent" href="bmi.html">Try our BMI Calculator</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <h3 class="m0">WellSpring Family Clinic</h3>
+      <p class="mt8">Caring for families with compassion and evidence-based medicine.</p>
+      <div class="chips mt16">
+        <span class="chip">General Practice</span>
+        <span class="chip">Immunizations</span>
+        <span class="chip">Family Health</span>
+      </div>
+    </div>
+    <div>
+      <h4 class="m0">Visit Us</h4>
+      <p class="mt8">123 Meadow Lane, Melbourne VIC 3000</p>
+      <p>Mon–Fri: 8:00–18:00 • Sat: 9:00–13:00</p>
+    </div>
+    <div>
+      <h4 class="m0">Contact</h4>
+      <p class="mt8">Phone: (03) 5555 1234</p>
+      <p>Email: hello@wellspring.example</p>
+    </div>
+  </div>
+  <div class="container" style="padding:12px 0; border-top:1px solid var(--ring);">
+    <small>© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WellSpring Family Clinic | About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet the doctors at WellSpring Family Clinic. Learn about our mission, family-centred care, and commitment to accessible healthcare in Melbourne.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="WellSpring Family Clinic Home">
+      <span class="brand__logo">W</span>
+      <span class="brand__text">WellSpring Family Clinic</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav__links" role="navigation" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="bmi.html">BMI Calculator</a>
+      <a class="nav__link" href="appointment.html">Appointment</a>
+      <a class="nav__link" href="about.html">About Us</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container grid-2">
+    <section class="card reveal">
+      <h1 class="m0">About WellSpring</h1>
+      <p class="mt8">We’re a community clinic focused on access, quality, and continuity of care.</p>
+      <p>Our multidisciplinary team includes general practitioners, nurses, and allied health partners. We emphasise preventive care, shared decision-making, and clear communication.</p>
+      <div class="grid mt24">
+        <div class="kpi"><div>Established <b>2025</b></div></div>
+        <div class="kpi"><div>Average wait time <b>&lt; 15 min</b></div></div>
+      </div>
+    </section>
+
+    <aside class="card reveal">
+      <h2 class="m0">Our Doctors</h2>
+      <ul class="mt16">
+        <li><b>Dr. Maya Chen</b> — Family Physician, Women’s Health</li>
+        <li><b>Dr. Liam Patel</b> — General Practice, Chronic Care</li>
+        <li><b>Dr. Sofia Nguyen</b> — Children’s Health, Immunization</li>
+      </ul>
+      <div class="alert alert--success mt16">We welcome new patients. Ask about bulk-billing eligibility.</div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <h3 class="m0">WellSpring Family Clinic</h3>
+      <p class="mt8">Caring for families with compassion and evidence-based medicine.</p>
+      <div class="chips mt16">
+        <span class="chip">General Practice</span>
+        <span class="chip">Immunizations</span>
+        <span class="chip">Family Health</span>
+      </div>
+    </div>
+    <div>
+      <h4 class="m0">Visit Us</h4>
+      <p class="mt8">123 Meadow Lane, Melbourne VIC 3000</p>
+      <p>Mon–Fri: 8:00–18:00 • Sat: 9:00–13:00</p>
+    </div>
+    <div>
+      <h4 class="m0">Contact</h4>
+      <p class="mt8">Phone: (03) 5555 1234</p>
+      <p>Email: hello@wellspring.example</p>
+    </div>
+  </div>
+  <div class="container" style="padding:12px 0; border-top:1px solid var(--ring);">
+    <small>© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

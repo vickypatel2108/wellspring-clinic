@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Appointment Request | WellSpring Family Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request an appointment with WellSpring Family Clinic by submitting your preferred date and details.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="WellSpring Family Clinic Home">
+      <span class="brand__logo">W</span>
+      <span class="brand__text">WellSpring Family Clinic</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav__links" role="navigation" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="bmi.html">BMI Calculator</a>
+      <a class="nav__link" href="appointment.html">Appointment</a>
+      <a class="nav__link" href="about.html">About Us</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container grid-2">
+    <section class="card reveal">
+      <h1 class="m0">Request an Appointment</h1>
+      <p class="mt8">Fill in your details and preferred date. We’ll confirm by phone or email.</p>
+
+      <!-- Form now calls sendAppointment() -->
+      <form id="appointment-form" class="grid mt24" onsubmit="sendAppointment(event)" aria-describedby="appoint-help">
+        <div class="field">
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="phone">Phone *</label>
+          <input id="phone" name="phone" type="tel" required inputmode="tel" placeholder="(03) 5555 1234">
+        </div>
+        <div class="field">
+          <label for="date">Preferred Date *</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Reason for appointment (optional)"></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit">Send Request</button>
+        <div id="appointment-msg" class="mt16" role="status" aria-live="polite"></div>
+      </form>
+
+      <p id="appoint-help" class="help mt16">We aim to respond within one business day.</p>
+    </section>
+
+    <aside class="card reveal">
+      <h2 class="m0">What to Bring</h2>
+      <ul class="mt16">
+        <li>Medicare card and photo ID</li>
+        <li>List of current medications</li>
+        <li>Relevant test results or referrals</li>
+      </ul>
+      <div class="alert alert--info mt16">For urgent medical attention, call 000 or visit your nearest emergency department.</div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <h3 class="m0">WellSpring Family Clinic</h3>
+      <p class="mt8">Caring for families with compassion and evidence-based medicine.</p>
+      <div class="chips mt16">
+        <span class="chip">General Practice</span>
+        <span class="chip">Immunizations</span>
+        <span class="chip">Family Health</span>
+      </div>
+    </div>
+    <div>
+      <h4 class="m0">Visit Us</h4>
+      <p class="mt8">123 Meadow Lane, Melbourne VIC 3000</p>
+      <p>Mon–Fri: 8:00–18:00 • Sat: 9:00–13:00</p>
+    </div>
+    <div>
+      <h4 class="m0">Contact</h4>
+      <p class="mt8">Phone: (03) 5555 1234</p>
+      <p>Email: hello@wellspring.example</p>
+    </div>
+  </div>
+  <div class="container" style="padding:12px 0; border-top:1px solid var(--ring);">
+    <small>© <span id="year"></span> WellSpring Family Clinic. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>
